@@ -11,7 +11,7 @@ RUN apt-get install -y python3 python3-pip
 WORKDIR /app
 
 # Copy the Python file to the working directory
-COPY your_flask_app.py /app/
+COPY api.py /app/
 
 # Install Flask
 RUN pip3 install flask
