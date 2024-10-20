@@ -14,7 +14,7 @@ WORKDIR /app
 COPY api.py /app/
 
 # Install Flask
-RUN pip3 install flask
+RUN apt install python3-flask -y 
 
 # Set the command to run the Flask server
 CMD ["python3", "your_flask_app.py"]
